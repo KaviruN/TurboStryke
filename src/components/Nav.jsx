@@ -25,7 +25,7 @@ function Nav() {
 
             {/* Navigation Links */}
             <ul className={`nav-links ${isMenuOpen ? 'nav-links-open' : ''}`}>
-                <li><a href="/" onClick={() => setIsMenuOpen(false)}>Home</a></li>
+                <li><a href="/" className='nav-active' onClick={() => setIsMenuOpen(false)}>Home</a></li>
                 <li><a href="/tuning-options" onClick={() => setIsMenuOpen(false)}>Tuning Options</a></li>
                 <li><a href="/about" onClick={() => setIsMenuOpen(false)}>About</a></li>
                 <li><a href="/contact-us" onClick={() => setIsMenuOpen(false)}>Contact us</a></li>

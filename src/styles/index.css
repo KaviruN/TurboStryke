@@ -52,6 +52,41 @@ html {
   color: hsl(0, 0%, 100%);
   font-weight: 500;
   font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: hsla(0, 0%, 100%, 0.678);
+}
+
+.nav-active {
+  background: linear-gradient(99deg, #ec5324 0.07%, #df3059 106.32%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger-menu:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger-menu:focus {
+  outline: 2px solid hsl(0, 0%, 100%);
+  outline-offset: 2px;
 }
 
 .wavy-container {
@@ -77,27 +112,7 @@ html {
   margin: 3em 2em 0;
 }
 
-/* Hamburger Menu Styles */
-.hamburger-menu {
-  display: none;
-  background: none;
-  border: none;
-  color: hsl(0, 0%, 100%);
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
 
-.hamburger-menu:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.hamburger-menu:focus {
-  outline: 2px solid hsl(0, 0%, 100%);
-  outline-offset: 2px;
-}
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
@@ -159,6 +174,4 @@ html {
     font-size: 1.5rem;
     font-weight: 600;
   }
-
-
 }
