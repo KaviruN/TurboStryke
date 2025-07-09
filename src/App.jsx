@@ -1,9 +1,14 @@
+
+import Nav from "./components/Nav"
 import Home from "./pages/Home"
 
 function App() {
 
   return (
-    <Home />
+    <div className="container">
+      <Nav />
+      <Home />
+    </div>
   )
 }
 
