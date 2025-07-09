@@ -1,9 +1,7 @@
 function Home(){
     return (
         <div className="home">
-            <h1>Welcome to TurboStryke</h1>
-            <p>Your one-stop solution for all your needs.</p>
-            <button className="btn">Get Started</button>
+            <h1>Your one-stop shop for<br/> custom car tuning<br/>  and performance upgrades.</h1>
         </div>
     );
 }
