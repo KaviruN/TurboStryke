@@ -1,8 +1,13 @@
-function Home(){
+import { WavyBackground } from "../components/WavyBackground";
+
+function Home() {
     return (
-        <div className="home">
-            <h1>Your one-stop shop for<br/> custom car tuning<br/>  and performance upgrades.</h1>
-        </div>
+        <>
+            <WavyBackground />
+            <div className="home">
+                <h1>Your one-stop shop for<br /> custom car tuning<br />  and performance upgrades.</h1>
+            </div>
+        </>
     );
 }
 
