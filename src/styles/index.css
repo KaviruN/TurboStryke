@@ -33,6 +33,7 @@ html {
   align-items: center;
   padding: 1rem;
   width: 100%;
+  background-color: hsl(0, 0%, 0%);
 }
 
 .nav ul {
@@ -60,7 +61,8 @@ html {
   color: hsl(0, 80%, 70%);
 } */
 
-.nav-active , .nav a:hover {
+.nav-active,
+.nav a:hover {
   background: linear-gradient(
     99deg,
     hsl(0, 80%, 50%) 0.07%,
@@ -104,17 +106,48 @@ html {
 }
 
 .home {
-  min-height: 100dvh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
 .home h1 {
   font-family: "Orbitron", sans-serif;
   margin: 3em 2em 0;
+}
+
+.car-model {
+  width: 100%;
+  position: relative;
+  height: 50dvh;
+}
+
+
+
+/* Desk top responsive styles */
+
+@media (min-width: 768px) {
+  .home {
+    flex-direction: row;
+    align-content: space-evenly;
+                                               
+  }
+
+  .car-model {
+    width: 50%;
+    height: 100dvh;
+  }
+
+  .wavy-container {
+    height: 100dvh;
+  }
+
+  /* .home-content{
+    align-self: center;
+  } */
 }
 
 /* Mobile Responsive Styles */
@@ -146,7 +179,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: hsla(0, 80%, 5%, 0.95);
+    background-color: hsla(0, 81%, 67%, 0.104);
     backdrop-filter: blur(40px);
     padding: 2rem;
     box-shadow: 0 2px 10px hsla(0, 0%, 0%, 0.5);
@@ -177,4 +210,6 @@ html {
     font-size: 1.5rem;
     font-weight: 600;
   }
+
+
 }

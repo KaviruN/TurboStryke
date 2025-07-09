@@ -6,7 +6,9 @@ function Home() {
         <>
             <WavyBackground />
             <div className="home">
-                <h1>Your one-stop shop for<br /> custom car tuning<br />  and performance upgrades.</h1>
+                <div className="home-content">
+                    <h1>Your one-stop shop for custom car tuning  and performance upgrades.</h1>
+                </div>
                 <div className="car-model">
                     <CarModels />
                 </div>

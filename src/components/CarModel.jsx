@@ -11,8 +11,9 @@ function CarModels() {
     <Canvas
       dpr={[1, 2]}
       shadows
-      camera={{ fov: 45 }}
+      camera={{ fov: 40 }}
       className="car-models-canvas"
+      
     >
       <PresentationControls
         speed={1.5}
