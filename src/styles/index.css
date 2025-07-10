@@ -57,9 +57,9 @@ html {
   padding: 0 1em;
 }
 
-/* .nav a:hover {
-  color: hsl(0, 80%, 70%);
-} */
+.nav a:last-child {
+  margin-right: 0;
+}
 
 .nav-active,
 .nav a:hover {
@@ -131,6 +131,7 @@ html {
 
 @media (min-width: 768px) {
   .home {
+    height: 70dvh;
     flex-direction: row;
     align-content: space-evenly;
                                                
