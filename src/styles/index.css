@@ -120,14 +120,18 @@ body {
   justify-content: center;
 }
 
-.home {
+.home,
+.services {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
   padding-top: 5em;
+}
+
+.home {
+  align-items: center;
+  justify-content: center;
 }
 
 .home-content {
@@ -182,7 +186,6 @@ body {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2rem;
   max-width: 500px;
-
 }
 
 .cta-buttons {
@@ -298,6 +301,13 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
+
+.services-header {
+  text-align: center;
+  padding: 0 2em;
+
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -321,7 +331,6 @@ body {
 }
 
 /* Desktop Responsive Styles */
-
 
 @media (min-width: 768px) {
   .home {
