@@ -1,4 +1,4 @@
-import ServiceCard from "../components/ServiceCard";
+import ServiceCard from "./ServiceCard";
 import eculogo from "../assets/ecu-logo.svg";
 import carlogo from "../assets/car-logo.svg";
 import meterlogo from "../assets/meter-logo.svg";
