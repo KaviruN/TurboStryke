@@ -14,26 +14,38 @@ img {
 }
 
 html {
-  background-image: linear-gradient(
-    180deg,
-    hsl(0, 85%, 8%) 16.39%,
-    hsl(0, 75%, 5%) 20.51%,
-    hsl(0, 90%, 3%) 24.79%,
-    hsl(0, 0%, 2%) 30.46%,
-    hsl(0, 0%, 0%) 34.11%,
-    hsl(0, 0%, 0%) 36.21%,
-    hsl(0, 0%, 0%) 100%
-  );
+  background: #000;
   color: hsl(0, 0%, 100%);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(ellipse at center, #1a0000 0%, #000000 70%);
+  min-height: 100vh;
+}
+
+.wavy-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
 }
 
 .nav {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   width: 100%;
-  background-color: hsl(0, 0%, 0%);
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.1);
 }
 
 .nav ul {
@@ -51,10 +63,15 @@ html {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   font-weight: 500;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.1rem;
   margin-right: 1em;
-  padding: 0 1em;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav a:last-child {
+  margin-right: 0;
 }
 
 .nav a:last-child {
@@ -98,7 +115,7 @@ html {
 
 .wavy-container {
   position: absolute;
-  z-index: -111;
+  z-index: -1;
   height: 70dvh;
   display: flex;
   align-items: center;
@@ -106,49 +123,240 @@ html {
 }
 
 .home {
-  height: 100dvh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-top: 80px;
 }
 
-.home h1 {
+.home-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 2rem;
+  z-index: 10;
+}
+
+.hero-text {
+  animation: fadeInUp 1s ease-out;
+}
+
+.main-title {
   font-family: "Orbitron", sans-serif;
-  margin: 3em 2em 0;
+  font-size: clamp(2rem, 12vw, 4rem);
+  font-weight: 900;
+  line-height: 0.9;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+}
+
+.title-line {
+  display: block;
+  background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-line.highlight {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff4444 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.stat-number {
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff0000;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .car-model {
   width: 100%;
   position: relative;
-  height: 50dvh;
+  height: 50vh;
+  overflow: hidden;
 }
 
+.car-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 5;
+}
 
+.floating-badge {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 25px;
+  padding: 0.6rem 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  animation: float 3s ease-in-out infinite;
+}
 
-/* Desk top responsive styles */
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Wavy container adjustments */
 @media (min-width: 768px) {
   .home {
-    height: 70dvh;
     flex-direction: row;
-    align-content: space-evenly;
-                                               
+    padding-top: 0;
+    gap: 2rem;
+  }
+
+  .home-content {
+    flex: 1;
+    max-width: none;
+    text-align: left;
+    padding: 4rem;
   }
 
   .car-model {
-    width: 50%;
-    height: 100dvh;
+    flex: 1;
+    height: 100vh;
   }
 
   .wavy-container {
-    height: 100dvh;
+    height: 100vh;
   }
 
-  /* .home-content{
-    align-self: center;
-  } */
+  .main-title {
+    font-size: clamp(3rem, 6vw, 6rem);
+  }
+
+  .cta-buttons {
+    justify-content: flex-start;
+  }
+
+  .stats {
+    justify-content: flex-start;
+  }
 }
 
 /* Mobile Responsive Styles */
@@ -156,19 +364,19 @@ html {
   .nav {
     position: relative;
     flex-wrap: wrap;
-    z-index: 1001;
+    z-index: 1;
   }
 
   .hamburger-menu {
     display: block;
     order: 2;
-    z-index: 1002;
+    z-index: 2;
     position: relative;
   }
 
   .nav .logo {
     order: 1;
-    z-index: 1002;
+    z-index: 2;
     position: relative;
   }
 
@@ -188,7 +396,7 @@ html {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 1;
     justify-content: center;
     align-items: center;
   }
@@ -211,6 +419,4 @@ html {
     font-size: 1.5rem;
     font-weight: 600;
   }
-
-
 }
