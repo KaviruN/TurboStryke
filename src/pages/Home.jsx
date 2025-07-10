@@ -3,7 +3,7 @@ import CarModels from "../components/CarModel";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="home-content">
         <div className="hero-text">
           <h1 className="main-title">

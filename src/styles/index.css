@@ -23,6 +23,10 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  font-size: clamp(2rem, 4vw, 2.2rem);
+}
+
 .wavy-container {
   position: fixed;
   top: 0;
@@ -184,7 +188,7 @@ body {
   text-transform: uppercase;
 }
 
-.description {
+.description, .card-description {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
@@ -306,11 +310,57 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
+.services{
+  justify-content: space-evenly;
+}
+
 
 .services-header {
   text-align: center;
   padding: 0 2em;
 
+}
+
+.services-card{
+  display: flex;
+  width: 100%;
+  align-content: space-evenly;
+  justify-items: center;
+  padding: 0 2em;
+  margin-top: 1em;
+}
+
+.services-card:first-child {
+  margin-top: 3;
+}
+
+.card-image{
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.card-title{
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff4444 100%);
+  background-clip: text;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.card-description{
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
 }
 
 /* Animations */
@@ -338,10 +388,13 @@ body {
 /* Desktop Responsive Styles */
 
 @media (min-width: 768px) {
-  .home {
+  .home, .services {
     flex-direction: row;
-    padding-top: 0;
     gap: 2rem;
+  }
+
+  .services{
+    align-items: center;
   }
 
   .home-content {
@@ -370,6 +423,10 @@ body {
 
   .stats {
     justify-content: flex-start;
+  }
+
+  .services-header{
+    width: 50%;
   }
 }
 
