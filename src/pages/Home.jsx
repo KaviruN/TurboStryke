@@ -2,6 +2,13 @@ import { WavyBackground } from "../components/WavyBackground";
 import CarModels from "../components/CarModel";
 
 function Home() {
+  const scrollToServices = (tag) => {
+    const servicesSection = document.getElementById(tag);
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="home" id="home">
       <div className="home-content">
@@ -18,7 +25,9 @@ function Home() {
             From ECU remapping to complete performance overhauls.
           </p>
           <div className="cta-buttons">
-            <button className="btn btn-primary">Explore Services</button>
+            <button className="btn btn-primary" onClick={() => scrollToServices("services")}>
+              Explore Services
+            </button>
             <button className="btn btn-secondary">Book Consultation</button>
           </div>
           <div className="stats">
