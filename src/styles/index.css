@@ -320,6 +320,8 @@ body {
   }
 }
 
+/* Desktop Responsive Styles */
+
 
 @media (min-width: 768px) {
   .home {
