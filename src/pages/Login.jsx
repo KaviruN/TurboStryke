@@ -1,7 +1,7 @@
 function Login() {
   document.title = "Login";
   return (
-    <div className="user">
+    <div className="user wrapper">
       <div className="user-content">
         <h1 className="main-title user-title">Login</h1>
         <p className="user-description subtitle">Sing in to your account</p>

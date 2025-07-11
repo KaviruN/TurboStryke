@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <div className="home-contaner">
-      <div className="home" id="home">
+      <div className="home wrapper" id="home">
         <div className="home-content">
           <div className="hero-text">
             <h1 className="main-title">

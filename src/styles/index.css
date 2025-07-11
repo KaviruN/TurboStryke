@@ -144,10 +144,8 @@ h1 {
   justify-content: center;
 }
 
-.home,
-.services,
-.about,
-.user {
+
+.wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -694,7 +692,7 @@ h1 {
 .home-content {
   flex: 1;
   max-width: none;
-  text-align: left;
+  /* text-align: left; */
   padding: 4rem;
 }
 
@@ -808,6 +806,11 @@ h1 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
   }
 }
 

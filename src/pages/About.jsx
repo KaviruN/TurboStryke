@@ -1,7 +1,7 @@
 function About() {
   document.title = "About Us";
   return (
-    <div className="about">
+    <div className="about wrapper">
       <div className="about-content">
         <section className="about-header">
           <h1 className="main-title">

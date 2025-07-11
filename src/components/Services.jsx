@@ -5,7 +5,7 @@ import meterlogo from "../assets/meter-logo.svg";
 
 function Services() {
   return (
-    <section className="services" id="services">
+    <section className="services wrapper" id="services">
       <div className="services-header">
         <h1 className="main-title">
           <span className="title-line highlight">UNLEASH</span>
