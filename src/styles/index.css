@@ -28,6 +28,30 @@ body {
 h1 {
   font-size: clamp(2rem, 4vw, 2.2rem);
 }
+
+
+.page-up {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.122);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: .7rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+  animation: float 3s ease-in-out infinite;
+  z-index: 11;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+}
+
+.page-up span{
+  font-size: clamp(1em, 2vw, 2em);
+  font-weight: 900;
+}
+
 /* ===== END GLOBAL STYLES ===== */
 
 /* ===== WAVY BACKGROUND ===== */
@@ -547,6 +571,10 @@ h1 {
 
   .services-header {
     width: 50%;
+  }
+
+  .floating-badge{
+    bottom: 8em;
   }
 
 
