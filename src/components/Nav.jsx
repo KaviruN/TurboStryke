@@ -86,6 +86,28 @@ function Nav() {
             Contact us
           </a>
         </li>
+        <li>
+          <a
+            href="/login"
+            className={isActive("/login") ? "nav-active" : ""}
+            onClick={() => setIsMenuOpen(false)}
+            onMouseOver={hoverNav}
+            onMouseOut={hoverNavOut}
+          >
+            Login
+          </a>
+        </li>
+        <li>
+          <a
+            href="/register"
+            className={isActive("/register") ? "nav-active" : ""}
+            onClick={() => setIsMenuOpen(false)}
+            onMouseOver={hoverNav}
+            onMouseOut={hoverNavOut}
+          >
+            Register
+          </a>
+        </li>
       </ul>
     </nav>
   );

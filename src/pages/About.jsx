@@ -1,10 +1,11 @@
 function About() {
+  document.title = "About Us";
   return (
     <div className="about">
       <div className="about-content">
         <section className="about-header">
           <h1 className="main-title">
-            <span className="title-line">ABOUT</span>
+            <span className="titel-line">ABOUT</span>
             <span className="title-line highlight">US</span>
           </h1>
         </section>
