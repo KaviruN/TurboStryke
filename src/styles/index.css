@@ -32,7 +32,7 @@ h1 {
 
 .page-up {
   position: fixed;
-  bottom: 1rem;
+  bottom: 5rem;
   right: 1rem;
   background: rgba(0, 0, 0, 0.122);
   backdrop-filter: blur(10px);
@@ -517,6 +517,7 @@ h1 {
   margin: 2em 0;
   border-radius: 8px;
   color: hsl(0, 0%, 100%);
+  
 }
 
 .input input 
@@ -524,6 +525,12 @@ h1 {
   color: #ffffff;
   
 }
+
+.input-forcus{
+  filter: drop-shadow(0 0 20px hsla(0, 100%, 50%, 0.4));
+}
+
+
 
 .user-footer{
   margin-bottom: 0;
@@ -539,10 +546,12 @@ h1 {
 
 .user-footer a:hover, .user-footer a:focus {
   text-decoration: underline;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
 }
 
 .user-footer .highlight{
-  color: hsl(0, 100%, 50%);
+  color: hsl(0, 100%, 50%) !important;
   font-weight: 600;
 }
 
