@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +16,11 @@ function Nav() {
 
   const hoverNavOut = (e) => {
     e.target.classList.remove("nav-active");
+  };
+
+  // Helper function to check if current path matches
+  const isActive = (path) => {
+    return location.pathname === path;
   };
 
   return (
@@ -38,7 +45,7 @@ function Nav() {
         <li>
           <a
             href="/"
-            className="nav-active"
+            className={isActive("/") ? "nav-active" : ""}
             onClick={() => setIsMenuOpen(false)}
             onMouseOver={hoverNav}
             onMouseOut={hoverNavOut}
@@ -47,17 +54,35 @@ function Nav() {
           </a>
         </li>
         <li>
-          <a href="/tuning-options" onClick={() => setIsMenuOpen(false)} onMouseOver={hoverNav} onMouseOut={hoverNavOut}>
+          <a
+            href="/tuning-options"
+            className={isActive("/tuning-options") ? "nav-active" : ""}
+            onClick={() => setIsMenuOpen(false)}
+            onMouseOver={hoverNav}
+            onMouseOut={hoverNavOut}
+          >
             Tuning Options
           </a>
         </li>
         <li>
-          <a href="/about" onClick={() => setIsMenuOpen(false)} onMouseOver={hoverNav} onMouseOut={hoverNavOut}>
+          <a
+            href="/about"
+            className={isActive("/about") ? "nav-active" : ""}
+            onClick={() => setIsMenuOpen(false)}
+            onMouseOver={hoverNav}
+            onMouseOut={hoverNavOut}
+          >
             About
           </a>
         </li>
         <li>
-          <a href="/contact-us" onClick={() => setIsMenuOpen(false)} onMouseOver={hoverNav} onMouseOut={hoverNavOut}>
+          <a
+            href="/contact-us"
+            className={isActive("/contact-us") ? "nav-active" : ""}
+            onClick={() => setIsMenuOpen(false)}
+            onMouseOver={hoverNav}
+            onMouseOut={hoverNavOut}
+          >
             Contact us
           </a>
         </li>
