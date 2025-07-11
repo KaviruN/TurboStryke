@@ -490,16 +490,63 @@ h1 {
   text-align: center;
 }
 
-.user > * {
+.user-container > * {
   margin-bottom: 2em;
 }
 
-.usertitle {
-  background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff4444 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.user-title {
+  color: hsla(0, 100%, 50%, 0.675);
 }
+
+.user input{
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.user i{
+  font-size: 1.2rem;
+  margin-right: .5em;
+}
+
+.input {
+  border: 3px solid rgba(255, 0, 0, 0.3);
+  padding: 1em 2em;
+  margin: 2em 0;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+}
+
+.input input 
+.input input::placeholder, .input i {
+  color: #ffffff;
+  
+}
+
+.user-footer{
+  margin-bottom: 0;
+  
+}
+
+.user-footer a, .user-footer p {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.user-footer a:hover, .user-footer a:focus {
+  text-decoration: underline;
+}
+
+.user-footer .highlight{
+  color: hsl(0, 100%, 50%);
+  font-weight: 600;
+}
+
+
 /* ===== END USER SECTION ===== */
 
 /* ===== ANIMATIONS ===== */
@@ -536,6 +583,7 @@ h1 {
     flex-direction: row;
     gap: 2rem;
   }
+  
 
   .services {
     align-items: center;
@@ -557,9 +605,7 @@ h1 {
     height: 100vh;
   }
 
-  .main-title {
-    font-size: clamp(3rem, 6vw, 6rem);
-  }
+
 
   .cta-buttons {
     align-items: flex-start;
