@@ -85,8 +85,7 @@ h1 {
   margin-right: 0;
 }
 
-.nav-active,
-.nav a:hover {
+.nav-active {
   background: linear-gradient(
     99deg,
     hsl(0, 80%, 50%) 0.07%,

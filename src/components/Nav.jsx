@@ -8,6 +8,14 @@ function Nav() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const hoverNav = (e) => {
+    e.target.classList.add("nav-active");
+  };
+
+  const hoverNavOut = (e) => {
+    e.target.classList.remove("nav-active");
+  };
+
   return (
     <nav className="nav">
       <div className="logo">
@@ -32,22 +40,24 @@ function Nav() {
             href="/"
             className="nav-active"
             onClick={() => setIsMenuOpen(false)}
+            onMouseOver={hoverNav}
+            onMouseOut={hoverNavOut}
           >
             Home
           </a>
         </li>
         <li>
-          <a href="/tuning-options" onClick={() => setIsMenuOpen(false)}>
+          <a href="/tuning-options" onClick={() => setIsMenuOpen(false)} onMouseOver={hoverNav} onMouseOut={hoverNavOut}>
             Tuning Options
           </a>
         </li>
         <li>
-          <a href="/about" onClick={() => setIsMenuOpen(false)}>
+          <a href="/about" onClick={() => setIsMenuOpen(false)} onMouseOver={hoverNav} onMouseOut={hoverNavOut}>
             About
           </a>
         </li>
         <li>
-          <a href="/contact-us" onClick={() => setIsMenuOpen(false)}>
+          <a href="/contact-us" onClick={() => setIsMenuOpen(false)} onMouseOver={hoverNav} onMouseOut={hoverNavOut}>
             Contact us
           </a>
         </li>
