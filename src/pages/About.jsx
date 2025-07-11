@@ -25,7 +25,7 @@ function About() {
 
         <section className="about-section">
           <h2 className="about-title">
-            <i className="ri-target-line"></i>
+            <i class="ri-focus-2-line"></i>
             Our Mission
           </h2>
           <p className="about-description">

@@ -1,5 +1,7 @@
+/* ===== IMPORTS ===== */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap");
 
+/* ===== GLOBAL STYLES ===== */
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +28,9 @@ body {
 h1 {
   font-size: clamp(2rem, 4vw, 2.2rem);
 }
+/* ===== END GLOBAL STYLES ===== */
 
+/* ===== WAVY BACKGROUND ===== */
 .wavy-container {
   position: fixed;
   top: 0;
@@ -38,6 +42,9 @@ h1 {
   height: 100dvh;
   margin: auto;
 }
+/* ===== END WAVY BACKGROUND ===== */
+
+/* ===== NAVIGATION STYLES ===== */
 
 .nav {
   position: fixed;
@@ -51,7 +58,7 @@ h1 {
   /* backdrop-filter: blur(20px); */
 }
 
-.nav *{
+.nav * {
   z-index: 11;
 }
 
@@ -135,6 +142,9 @@ h1 {
   outline: 2px solid hsl(0, 80%, 60%);
   outline-offset: 2px;
 }
+/* ===== END NAVIGATION STYLES ===== */
+
+/* ===== LAYOUT WRAPPER ===== */
 
 .wavy-container {
   position: fixed;
@@ -152,6 +162,9 @@ h1 {
   position: relative;
   padding-top: 5em;
 }
+/* ===== END LAYOUT WRAPPER ===== */
+
+/* ===== HOME PAGE STYLES ===== */
 
 .home {
   align-items: center;
@@ -203,7 +216,9 @@ h1 {
   text-transform: uppercase;
 }
 
-.description, .card-description {
+.description,
+.card-description,
+.about-description {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
@@ -291,6 +306,9 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+/* ===== END HOME PAGE STYLES ===== */
+
+/* ===== CAR MODEL SECTION ===== */
 
 .car-model {
   width: 100%;
@@ -324,16 +342,17 @@ h1 {
   color: white;
   animation: float 3s ease-in-out infinite;
 }
+/* ===== END CAR MODEL SECTION ===== */
+
+/* ===== SERVICES SECTION ===== */
 
 .services {
   justify-content: space-evenly;
 }
 
-
 .services-header {
   text-align: center;
   padding: 0 2em;
-
 }
 
 .services-card {
@@ -349,12 +368,12 @@ h1 {
   margin-top: 3;
 }
 
-.card-image{
+.card-image {
   width: 30%;
   aspect-ratio: 1/1;
 }
 
-.card-content{
+.card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,7 +381,8 @@ h1 {
   padding: 1em;
 }
 
-.card-title{
+.card-title,
+.about-title {
   font-family: "Orbitron", sans-serif;
   background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff4444 100%);
   background-clip: text;
@@ -371,12 +391,13 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-
-
-.card-description{
+.card-description {
   font-family: "Orbitron", sans-serif;
   margin: 0;
 }
+/* ===== END SERVICES SECTION ===== */
+
+/* ===== USER SECTION ===== */
 /* USER */
 
 .user {
@@ -396,6 +417,9 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* ===== END USER SECTION ===== */
+
+/* ===== ANIMATIONS ===== */
 
 /* Animations */
 @keyframes fadeInUp {
@@ -418,6 +442,9 @@ h1 {
     transform: translateY(-10px);
   }
 }
+/* ===== END ANIMATIONS ===== */
+
+/* ===== RESPONSIVE STYLES ===== */
 
 /* Desktop Responsive Styles */
 
@@ -427,7 +454,7 @@ h1 {
     gap: 2rem;
   }
 
-  .services{
+  .services {
     align-items: center;
   }
 
@@ -459,7 +486,7 @@ h1 {
     justify-content: flex-start;
   }
 
-  .services-header{
+  .services-header {
     width: 50%;
   }
 }
@@ -522,3 +549,4 @@ h1 {
     font-weight: 600;
   }
 }
+/* ===== END RESPONSIVE STYLES ===== */
