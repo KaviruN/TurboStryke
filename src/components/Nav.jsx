@@ -77,8 +77,8 @@ function Nav() {
         </li>
         <li>
           <a
-            href="/contact-us"
-            className={isActive("/contact-us") ? "nav-active" : ""}
+            href="/contact"
+            className={isActive("/contact") ? "nav-active" : ""}
             onClick={() => setIsMenuOpen(false)}
             onMouseOver={hoverNav}
             onMouseOut={hoverNavOut}
