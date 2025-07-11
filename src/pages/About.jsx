@@ -66,7 +66,7 @@ function About() {
             <div className="value-item">
               <h3>
                 <i className="ri-shield-check-line"></i>
-                Safety First:
+                Safety First
               </h3>
               <p className="about-description">
                 Every modification is thoroughly tested to ensure it meets
@@ -76,7 +76,7 @@ function About() {
             <div className="value-item">
               <h3>
                 <i className="ri-customer-service-2-line"></i>
-                Customer Focus:
+                Customer Focus
               </h3>
               <p className="about-description">
                 We work closely with each client to understand their goals and
@@ -86,7 +86,7 @@ function About() {
             <div className="value-item">
               <h3>
                 <i className="ri-lightbulb-line"></i>
-                Innovation:
+                Innovation
               </h3>
               <p className="about-description">
                 We constantly stay updated with the latest tuning technologies
@@ -96,7 +96,7 @@ function About() {
             <div className="value-item">
               <h3>
                 <i className="ri-eye-line"></i>
-                Transparency:
+                Transparency
               </h3>
               <p className="about-description">
                 We believe in honest communication about what's possible and
