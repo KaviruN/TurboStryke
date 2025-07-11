@@ -397,6 +397,17 @@ h1 {
 }
 /* ===== END SERVICES SECTION ===== */
 
+/* ==== ABOUT SECTION ===== */
+
+.about{
+  text-align: center;
+  padding: 2em;
+  margin-top: 3em;
+}
+
+
+/* ==== END ABOUT SECTION ===== */
+
 /* ===== USER SECTION ===== */
 /* USER */
 

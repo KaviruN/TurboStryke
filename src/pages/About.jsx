@@ -5,7 +5,7 @@ function About() {
       <div className="about-content">
         <section className="about-header">
           <h1 className="main-title">
-            <span className="titel-line">ABOUT</span>
+            <span className="title-line">ABOUT</span>
             <span className="title-line highlight">US</span>
           </h1>
         </section>
