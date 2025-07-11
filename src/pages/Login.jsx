@@ -1,10 +1,10 @@
 function Login() {
   document.title = "Login";
   return (
-    <div className="login">
-      <div className="login-content">
-        <h1 className="login-title">Login</h1>
-        <p className="login-description">Sing in to your account</p>
+    <div className="user">
+      <div className="user-content">
+        <h1 className="main-title user-title">Login</h1>
+        <p className="user-description subtitle">Sing in to your account</p>
       </div>
       <form>
         <div className="input">
@@ -15,11 +15,11 @@ function Login() {
           <i class="ri-lock-line"></i>
           <input type="password" placeholder="Password" required />
         </div>
-        <button type="submit" className="login-button">
+        <button type="submit" className="user-button">
           Login
         </button>
       </form>
-      <div className="login-footer">
+      <div className="user-footer">
         <a href="">Forgot password?</a>
         <p>
           Don't have an account? <a href="/signup">Sign up</a>

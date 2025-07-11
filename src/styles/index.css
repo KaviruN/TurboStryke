@@ -97,11 +97,11 @@ h1 {
   font-weight: 700 !important;
 }
 
-.nav-active{
+.nav-active {
   position: relative;
 }
 
-.nav-active::after{
+.nav-active::after {
   content: "";
   position: absolute;
   bottom: 0rem;
@@ -112,7 +112,6 @@ h1 {
   background: hsl(0, 0%, 100%);
   border-radius: 2px;
 }
-
 
 /* Hamburger Menu Styles */
 .hamburger-menu {
@@ -148,7 +147,7 @@ h1 {
 .home,
 .services,
 .about,
-.login {
+.user {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -412,8 +411,6 @@ h1 {
   border-radius: 2px;
 }
 
-
-
 .about-section {
   background: linear-gradient(
     135deg,
@@ -556,7 +553,8 @@ h1 {
   text-align: left;
 }
 
-/* Icon styling for About page - Modern */
+/* About */
+
 .about-title i {
   color: #ff0000;
   font-size: 1.3em;
@@ -578,6 +576,28 @@ h1 {
 .value-item:hover h3 i {
   color: #ff0000;
   transform: scale(1.05) rotate(3deg);
+}
+
+/* END - ABOUT */
+
+/* USER */
+
+.user {
+  max-height: 500px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.user > * {
+  margin-bottom: 2em;
+}
+
+.usertitle {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #ff4444 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Animations */
@@ -687,8 +707,6 @@ h1 {
   height: 100vh;
 }
 
-
-
 .cta-buttons {
   align-items: flex-start;
 }
@@ -768,8 +786,9 @@ h1 {
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 1;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    gap: 0 !important;
   }
 
   .nav-links-open {
@@ -791,9 +810,6 @@ h1 {
     font-weight: 600;
   }
 }
-
-
-
 
 @keyframes fadeInScale {
   from {
