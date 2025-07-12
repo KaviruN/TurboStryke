@@ -1,12 +1,27 @@
-# React + Vite
+# TurboStryke
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to TurboStryke!
 
-Currently, two official plugins are available:
+## What is this?
+This project was created for my university assignment. It's a React + Vite app where speed and style collide—well, mostly speed. Because who has time for anything else in university, right?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Why only one CSS file?
+You might notice there's just a single, glorious CSS file in this whole project. No SASS, no LESS, no Tailwind, not even sneaky inline styles. Why? Well... the truth is, I'm a bit lazy 🙃. Setting up SASS felt like too much work for my tired, student brain. So, I shoved all the styles into one place and called it a day. If you like chaos, you’ll love this.
 
-## Expanding the ESLint configuration
+## Features
+- Built with React and Vite (for maximum velocity)
+- JavaScript all the way
+- All styles in one CSS file for peak laziness efficiency
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to Use
+1. Clone this repo
+2. Run `npm install`
+3. Run `npm run dev`
+4. Enjoy the app (and the wild ride in the single CSS file)
+
+## Final Words
+If my professor is reading this: I swear I’ll use SASS next time. Maybe. Probably. Okay, no promises.
+
+---
+
+Made with 💻, ☕, and pure laziness.
