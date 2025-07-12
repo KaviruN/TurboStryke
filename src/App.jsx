@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Contact from "./pages/Contact";
+import TuningOptions from "./pages/TuningOptions";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -164,6 +165,17 @@ function App() {
                 <WavyBackground />
                 <Nav />
                 <Contact />
+                <PageUP />
+              </>
+            }
+          />
+          <Route
+            path="/tuning"
+            element={
+              <>
+                <WavyBackground />
+                <Nav />
+                <TuningOptions />
                 <PageUP />
               </>
             }
