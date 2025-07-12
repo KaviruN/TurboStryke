@@ -88,8 +88,9 @@ body {
   gap: 2rem;
 }
 
-.nav .logo {
-  width: 70px;
+.nav img{
+  width: 150px;
+  
 }
 
 .nav a {
@@ -680,7 +681,7 @@ body {
 }
 
 .loading-logo-img {
-  width: 100px;
+  width: 200px;
   height: auto;
   margin: 0 auto;
   filter: drop-shadow(0 0 20px hsla(0, 100%, 50%, 0.4));

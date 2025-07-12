@@ -1,10 +1,13 @@
+import logo from "../assets/logo.svg";
+
+
 function Loading() {
   return (
     <div className="loading-container">
       <div className="loading-content">
         <div className="loading-logo">
           <img
-            src="/src/assets/logo.png"
+            src={logo}
             alt="TurboStryke"
             className="loading-logo-img"
           />

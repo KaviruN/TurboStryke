@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
