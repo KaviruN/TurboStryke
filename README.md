@@ -25,3 +25,5 @@ If my professor is reading this: I swear I’ll use SASS next time. Maybe. Proba
 ---
 
 Made with 💻, ☕, and pure laziness.
+
+> Just a heads up: at my uni, we only learn basic HTML and CSS for now—I'm still in the foundation stage.
