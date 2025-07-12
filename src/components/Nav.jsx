@@ -25,7 +25,8 @@ function Nav() {
 
   return (
     <nav className="nav">
-      <div className="logo">
+      <nav className={`nav-container ${isMenuOpen ? "nav-container-open" : ""}`}>
+        <div className="logo">
         <a href="/">
           <img src={logo} alt="TurboStryke Logo" />
         </a>
@@ -37,7 +38,7 @@ function Nav() {
         onClick={toggleMenu}
         aria-label="Toggle navigation menu"
       >
-        <i className="ri-menu-line"></i>
+        <i className={`${isMenuOpen ? "ri-close-large-fill" : "ri-menu-line"}`}></i>
       </button>
 
       {/* Navigation Links */}
@@ -109,6 +110,7 @@ function Nav() {
           </a>
         </li>
       </ul>
+      </nav>
     </nav>
   );
 }
