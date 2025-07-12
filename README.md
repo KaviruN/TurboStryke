@@ -1,10 +1,9 @@
 # 🚗 TurboStryke
 
-**Fun fact:** I actually tried **Three.js** for the first time in this project and even focused hard enough to make a custom **404 page**!  
+> **Fun fact:** I actually tried **Three.js** for the first time in this project and even focused hard enough to make a custom **404 page**!  
 But don’t expect to see Three.js magic in my other projects—I’m way too lazy for that kind of consistency.  
 This was a one-time burst of motivation. 😅
 
----
 
 ## 🏁 Welcome to TurboStryke!
 
