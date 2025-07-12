@@ -649,7 +649,7 @@ body {
   min-width: 150px;
 }
 
-.not-found-buttons a {
+.btn {
   text-decoration: none;
 }
 
@@ -892,13 +892,13 @@ body {
 
 .tuning-options {
   justify-content: flex-start;
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .tuning-container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
+  margin-top: 5em;
 }
 
 .tuning-header {
@@ -940,7 +940,7 @@ body {
 }
 
 .service-icon {
-  font-size: 3rem;
+  font-size: 1.7rem;
   color: #ff0000;
   margin-bottom: 1rem;
 }
@@ -1084,6 +1084,10 @@ body {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.tuning-cta .cta-buttons{
+  align-items: center;
 }
 
 .cta-buttons .btn {

@@ -21,10 +21,9 @@ function TuningOptions() {
         <div className="tuning-services">
           {/* ECU Remapping */}
           <div className="tuning-service">
-            <div className="service-icon">
-              <i className="ri-cpu-line"></i>
-            </div>
-            <h3 className="service-title">ECU Remapping</h3>
+            <h3 className="service-title">
+              <i className="ri-cpu-line service-icon"></i> ECU Remapping
+            </h3>
             <p className="service-subtitle">Fine-tune your engine's brain</p>
             <ul className="service-features">
               <li>Optimized fuel-to-air ratio</li>
@@ -36,10 +35,10 @@ function TuningOptions() {
 
           {/* Turbocharger Upgrades */}
           <div className="tuning-service">
-            <div className="service-icon">
-              <i className="ri-flashlight-line"></i>
-            </div>
-            <h3 className="service-title">Turbocharger Upgrades</h3>
+            <h3 className="service-title">
+              <i className="ri-flashlight-line service-icon"></i> Turbocharger
+              Upgrades
+            </h3>
             <p className="service-subtitle">Boost beyond the basics</p>
             <ul className="service-features">
               <li>Larger, high-efficiency turbo units</li>
@@ -51,10 +50,10 @@ function TuningOptions() {
 
           {/* Exhaust System Modifications */}
           <div className="tuning-service">
-            <div className="service-icon">
-              <i className="ri-volume-up-line"></i>
-            </div>
-            <h3 className="service-title">Exhaust System Modifications</h3>
+            <h3 className="service-title">
+              <i className="ri-volume-up-line service-icon"></i> Exhaust System
+              Modifications
+            </h3>
             <p className="service-subtitle">Power with presence</p>
             <ul className="service-features">
               <li>High-flow catalytic converters</li>
@@ -66,10 +65,10 @@ function TuningOptions() {
 
           {/* Complete Performance Builds */}
           <div className="tuning-service">
-            <div className="service-icon">
-              <i className="ri-racing-line"></i>
-            </div>
-            <h3 className="service-title">Complete Performance Builds</h3>
+            <h3 className="service-title">
+              <i className="ri-racing-line service-icon"></i> Complete
+              Performance Builds
+            </h3>
             <p className="service-subtitle">
               From street machine to track beast
             </p>
@@ -83,10 +82,9 @@ function TuningOptions() {
 
           {/* Custom Solutions */}
           <div className="tuning-service">
-            <div className="service-icon">
-              <i className="ri-tools-line"></i>
-            </div>
-            <h3 className="service-title">Custom Solutions</h3>
+            <h3 className="service-title">
+              <i className="ri-tools-line service-icon"></i> Custom Solutions
+            </h3>
             <p className="service-subtitle">Because one-size never fits all</p>
             <ul className="service-features">
               <li>Hybrid setups & multi-stage tuning</li>
@@ -98,10 +96,9 @@ function TuningOptions() {
 
           {/* Vehicle Compatibility */}
           <div className="tuning-service">
-            <div className="service-icon">
-              <i className="ri-car-line"></i>
-            </div>
-            <h3 className="service-title">Vehicle Compatibility</h3>
+            <h3 className="service-title">
+              <i className="ri-car-line service-icon"></i> Vehicle Compatibility
+            </h3>
             <p className="service-subtitle">We tune:</p>
             <ul className="service-features">
               <li>European sports cars (BMW M-series, Audi RS, Porsche)</li>
