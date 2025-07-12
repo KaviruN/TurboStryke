@@ -11,6 +11,7 @@ import Register from "./pages/Register";
 import Contact from "./pages/Contact";
 import TuningOptions from "./pages/TuningOptions";
 import NotFound from "./pages/NotFound";
+import Footer from "./components/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -121,6 +122,7 @@ function App() {
                 <WavyBackground />
                 <Nav />
                 <Home />
+                <Footer />
                 <PageUP />
               </>
             }
@@ -132,6 +134,7 @@ function App() {
                 <WavyBackground />
                 <Nav />
                 <About />
+                <Footer />
                 <PageUP />
               </>
             }
@@ -143,6 +146,7 @@ function App() {
                 <WavyBackground />
                 <Nav />
                 <Login />
+                <Footer />
                 <PageUP />
               </>
             }
@@ -154,6 +158,7 @@ function App() {
                 <WavyBackground />
                 <Nav />
                 <Register />
+                <Footer />
                 <PageUP />
               </>
             }
@@ -165,6 +170,7 @@ function App() {
                 <WavyBackground />
                 <Nav />
                 <Contact />
+                <Footer />
                 <PageUP />
               </>
             }
@@ -176,6 +182,7 @@ function App() {
                 <WavyBackground />
                 <Nav />
                 <TuningOptions />
+                <Footer />
                 <PageUP />
               </>
             }

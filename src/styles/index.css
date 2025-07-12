@@ -25,6 +25,11 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .page-up {
   position: fixed;
   bottom: 1rem;
@@ -735,6 +740,37 @@ body {
 
 /* ===== END LOADING SECTION ===== */
 
+/* ===== FOOTER ===== */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.footer-copyrights{
+  padding-bottom: 1em;
+}
+
+.footer-copyrights i{
+  color: #cc0000;
+  font-size: 1.4em;
+}
+
+/* ===== END FOOTER ===== */
+
 /* ===== ANIMATIONS ===== */
 
 /* Animations */
@@ -834,6 +870,20 @@ body {
     align-items: start;
     justify-content: start;
   }
+
+  .footer-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+  }
+
+  .footer-links {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    text-align: left;
+  }
 }
 
 /* Mobile Responsive Styles */
@@ -897,6 +947,10 @@ body {
   .card-image {
     width: 50%;
   }
+
+  .footer-column {
+    margin-bottom: 2em;
+  }
 }
 /* ===== END RESPONSIVE STYLES ===== */
 
@@ -957,7 +1011,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.service-title {
+.service-title,
+.footer-column h4 {
   font-family: "Orbitron", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
@@ -978,7 +1033,8 @@ body {
   padding: 0;
 }
 
-.service-features li {
+.service-features li,
+.footer-column li {
   font-family: "Inter", sans-serif;
   color: rgba(255, 255, 255, 0.8);
   padding: 0.4rem 0;
@@ -986,7 +1042,8 @@ body {
   padding-left: 1.5rem;
 }
 
-.service-features li::before {
+.service-features li::before,
+.footer-column li::before {
   content: "✓";
   color: #ff0000;
   font-weight: bold;
