@@ -84,7 +84,7 @@ function Nav() {
             onMouseOver={hoverNav}
             onMouseOut={hoverNavOut}
           >
-            Contact us
+            Contact
           </a>
         </li>
         <li>
