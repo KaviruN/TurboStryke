@@ -55,13 +55,13 @@ function Nav() {
         </li>
         <li>
           <a
-            href="/tuning-options"
-            className={isActive("/tuning-options") ? "nav-active" : ""}
+            href="/tuning"
+            className={isActive("/tuning") ? "nav-active" : ""}
             onClick={() => setIsMenuOpen(false)}
             onMouseOver={hoverNav}
             onMouseOut={hoverNavOut}
           >
-            Tuning Options
+            Tuning
           </a>
         </li>
         <li>
