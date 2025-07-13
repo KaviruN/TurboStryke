@@ -1,9 +1,10 @@
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 import { Suspense } from "react";
+import laferrariModel from "../assets/laferrari.glb";
 
 function Model(props) {
-  const { scene } = useGLTF("src/assets/laferrari.glb");
+  const { scene } = useGLTF(laferrariModel);
   return <primitive object={scene} {...props} />;
 }
 
