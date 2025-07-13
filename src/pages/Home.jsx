@@ -1,5 +1,6 @@
 import CarModels from "../components/CarModel";
 import Services from "../components/Services";
+import { Suspense } from "react";
 
 function Home() {
   const scrollToServices = (tag) => {
@@ -51,7 +52,16 @@ function Home() {
           </div>
         </div>
         <div className="car-model">
-          <CarModels />
+          <Suspense
+            fallback={
+              <div className="model-loading">
+                <div className="loading-spinner"></div>
+                <p>Loading Premium LaFerrari Model...</p>
+              </div>
+            }
+          >
+            <CarModels />
+          </Suspense>
           <div className="car-overlay">
             <div className="floating-badge">
               <span>Premium LaFerrari Model</span>
