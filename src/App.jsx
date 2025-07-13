@@ -47,35 +47,9 @@ function App() {
   // Real loading functions
   const preloadImages = () => {
     return new Promise((resolve) => {
-      const images = [
-        "/src/assets/logo.png",
-        "/src/assets/car-logo.svg",
-        "/src/assets/ecu-logo.svg",
-        "/src/assets/meter-logo.svg",
-        "/src/assets/laferrari.glb",
-      ];
-
-      let loadedCount = 0;
-      const totalImages = images.length;
-
-      if (totalImages === 0) {
-        resolve();
-        return;
-      }
-
-      images.forEach((src) => {
-        const img = new Image();
-        img.onload = img.onerror = () => {
-          loadedCount++;
-          if (loadedCount === totalImages) {
-            resolve();
-          }
-        };
-        img.src = src;
-      });
-
-      // Fallback timeout
-      setTimeout(resolve, 3000);
+      // Since assets are properly imported in components,
+      // we just need a minimum loading time for UX
+      setTimeout(resolve, 2000);
     });
   };
 
