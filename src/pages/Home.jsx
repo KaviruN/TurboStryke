@@ -62,11 +62,11 @@ function Home() {
           >
             <CarModels />
           </Suspense>
-          <div className="car-overlay">
+          {/* <div className="car-overlay">
             <div className="floating-badge">
               <span>Premium LaFerrari Model</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Services />
