@@ -16,7 +16,7 @@ Live at 👉 [http://turbo.kaviru.me](http://turbo.kaviru.me)
 
 ## 🎨 Design & Theme
 
-The site’s look and feel are inspired by the Akatsuki clan from Naruto — think black and red, mysterious and bold.
+The site’s look and feel are inspired by the Akatsuki from Naruto — think black and red, mysterious and bold.
 Because why settle for boring when you can have villain chic?
 
 ## 🏎️ A Note on the 3D Model
