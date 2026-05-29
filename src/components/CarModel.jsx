@@ -1,13 +1,13 @@
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
-import laferrariModel from "../assets/laferrari.glb";
+const laferrariModel = "/laferrari-v2.glb";
 
 // Preload the model
 useGLTF.preload(laferrariModel);
 
 function Model(props) {
   const { scene } = useGLTF(laferrariModel);
-  return <primitive object={scene} {...props} />;
+  return <primitive object={scene} rotation={[0, Math.PI, 0]} {...props} />;
 }
 
 function CarModels() {
